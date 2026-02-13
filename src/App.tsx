@@ -3,6 +3,7 @@ import "./App.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const baseUrl = import.meta.env.BASE_URL;
 
   return (
     <main className="page-shell">
@@ -70,7 +71,7 @@ function App() {
             <figure className="memory-card">
               <img
                 className="photo-slot"
-                src="/fotos/eueminhamulher.webp"
+                src={`${baseUrl}fotos/eueminhamulher.webp`}
                 alt="Eu e meu amor juntos"
               />
               <figcaption>Essa foto tá foda</figcaption>
@@ -78,7 +79,7 @@ function App() {
             <figure className="memory-card">
               <img
                 className="photo-slot"
-                src="/fotos/eueminhamulher2.webp"
+                src={`${baseUrl}fotos/eueminhamulher2.webp`}
                 alt="Nosso momento especial"
               />
               <figcaption>Amo você</figcaption>
@@ -86,7 +87,7 @@ function App() {
             <figure className="memory-card">
               <img
                 className="photo-slot"
-                src="/fotos/eueminhamulher3.webp"
+                src={`${baseUrl}fotos/eueminhamulher3.webp`}
                 alt="Mais um dia lindo ao seu lado"
               />
               <figcaption>A melhor companhia do mundo</figcaption>
